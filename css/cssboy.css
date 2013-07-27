@@ -1,15 +1,3 @@
-/*
- * Screen stylesheet for HTML 5 Mobile Gameboy.
- *
- * Author: @gabrielrcouto
- * Version: 1, 22 july 2013
- *
- * Based on Geoffray original version. Thank you Geoffray!
- *
- * @author  Geoffray Warnants <gwarnants [at] gmail.com>
- * @website http://geoffray.be
- * @created 2012-07-28
- */
 
 div {
     -webkit-user-select: none;
@@ -18,7 +6,7 @@ div {
 #game {
     width:340px; 
     height: 306px;
-    background: #000000;
+
 }
 
 #gameboy {
@@ -33,16 +21,9 @@ div {
 }
 
 #gameboy-bottom {
-    border-top:1px solid #BFBFBF;   /* without that border a but appear with child div margin-top */
+
     height:536px;
-    box-shadow:inset 4px -4px 4px #BFBFBF, inset -4px -4px 4px #BFBFBF;
-    background:#DBDBDB;
-    background:-moz-linear-gradient(-45deg,  #DBDBDB 0%, #DBDBDB 32%, #ededed 61%, #DBDBDB 75%, #DBDBDB 88%, #A5A5A5 97%);
-    background:-webkit-gradient(linear, left top, right bottom, color-stop(0%,#DBDBDB), color-stop(32%,#DBDBDB), color-stop(61%,#ededed), color-stop(75%,#DBDBDB), color-stop(88%,#DBDBDB), color-stop(97%,#A5A5A5));
-    background:-webkit-linear-gradient(-45deg,  #DBDBDB 0%,#DBDBDB 32%,#ededed 61%,#DBDBDB 75%,#DBDBDB 88%,#A5A5A5 97%);
-    background:-o-linear-gradient(-45deg,  #DBDBDB 0%,#DBDBDB 32%,#ededed 61%,#DBDBDB 75%,#DBDBDB 88%,#A5A5A5 97%);
-    background:-ms-linear-gradient(-45deg,  #DBDBDB 0%,#DBDBDB 32%,#ededed 61%,#DBDBDB 75%,#DBDBDB 88%,#A5A5A5 97%);
-    background:linear-gradient(135deg,  #DBDBDB 0%,#DBDBDB 32%,#ededed 61%,#DBDBDB 75%,#DBDBDB 88%,#A5A5A5 97%);
+
 }
 
 #gameboy-paddle {
@@ -52,30 +33,34 @@ div {
 
 /* up */
 #gameboy-paddle > div:nth-child(1) {
+	margin: 0 auto;
     width:40px;
     height:36px;
     margin-left:68px;
-    border-top:1px solid #323232;
+
     border-top-left-radius:2px;
     border-top-right-radius:2px;
-    background-color:#323232;
+    background-image:url('../obrazki/up.png');
+	background-repeat:no-repeat;
 }
 
 #gameboy-paddle > div:nth-child(2) {
+	margin: 0 auto;
     float:left;
     height:40px;
     width:36px;
     margin-left:32px;
     border-top-left-radius:2px;
     border-bottom-left-radius:2px;
-    background-color:#323232;
+    background-image:url('../obrazki/left.png');
+	background-repeat:no-repeat;
 }
 
 #gameboy-paddle > div:nth-child(3) {
     float:left;
     width:40px;
     height:40px;
-    background-color:#323232;
+
 }
 
 #gameboy-paddle > div:nth-child(4) {
@@ -84,7 +69,8 @@ div {
     height:40px;
     border-top-right-radius:2px;
     border-bottom-right-radius:2px;
-    background-color:#323232;
+    background-image:url('../obrazki/right.png');
+	background-repeat:no-repeat;
 }
 
 /* down */
@@ -95,8 +81,9 @@ div {
     margin-left:68px;
     border-bottom-left-radius:2px;
     border-bottom-right-radius:2px;
-    border-top:1px solid #323232;
-    background-color:#323232;
+
+    background-image:url('../obrazki/down.png');
+	background-repeat:no-repeat;
 }
 
 #gameboy-paddle > div:nth-child(1):hover, #gameboy-paddle > div:nth-child(2):hover,
@@ -110,7 +97,7 @@ div {
     margin:10px 0 0 11px;
     border-radius:9px;
     box-shadow:inset 0 -1px 1px #7C7C7C;
-    background-color:#272727;
+
 }
 
 #gameboy-paddle > div:nth-child(1) div, #gameboy-paddle > div:nth-child(6) div {
@@ -118,7 +105,7 @@ div {
     height:4px;
     margin:3px 0 0 5px;
     border-radius:2px;
-    box-shadow:inset 0 -1px 1px #7C7C7C;
+    box-shadow:inset 0 -1px 1px #fbab3b;
     background-color:#242424;
 }
 
@@ -129,7 +116,7 @@ div {
     background-color:#242424;
     margin:5px 0 0 3px;
     border-radius:2px;
-    box-shadow:inset 0 -1px 1px #7C7C7C;
+    box-shadow:inset 0 -1px 1px #fbab3b;
 }
 
 #gameboy-paddle > div:nth-child(4) div {
@@ -140,12 +127,12 @@ div {
 
 #gameboy-buttons {
     float:left;
-    margin:46px 0 0 52px;
-    color:#230081;
+    margin:52px 0 0 30px;
+    color:#fbab3b;
     font-weight:bold;
     font-family:Tahoma;
     font-size:15px;
-    -moz-transform:rotate(324deg);
+    -moz-transform:rotate(328deg);
     -webkit-transform:rotate(324deg);
 }
 
@@ -175,8 +162,8 @@ div {
     width:42px;
     height:42px;
     border-radius:20px;
-    background-color:#99004F;
-    box-shadow: inset 2px -2px 2px #BFBFBF, inset -3px 3px 2px #6A053B;
+    background-color:#c33c28;
+    box-shadow: inset 2px -2px 2px #fbab3b, inset -3px 3px 2px #fbab3b;
 }
 
 #gameboy-buttons-inset > div:nth-child(2) {
@@ -185,19 +172,19 @@ div {
     height:42px;
     margin-left:27px;
     border-radius:20px;
-    background-color:#99004F;
-    box-shadow:inset 2px -2px 2px #BFBFBF, inset -3px 3px 2px #6A053B;
+    background-color:#c33c28;
+    box-shadow:inset 2px -2px 2px #fbab3b, inset -3px 3px 2px #6A053B;
 }
 
 #gameboy-buttons-inset > div:nth-child(1):hover, #gameboy-buttons-inset > div:nth-child(2):hover {
-    background-color: #6A053B;
+    background-color: #fbab3b;
 }
 
 #gameboy-startpause {
     width:200px;
     height:60px;
     margin:34px 0 0 100px;
-    color:#230081;
+    color:#fbab3b;
     font-weight:bold;
     font-family:Tahoma;
     font-size:11px;
@@ -205,8 +192,7 @@ div {
 
 #gameboy-startpause > div {
     float:left;
-    -moz-transform:rotate(324deg);
-    -webkit-transform:rotate(324deg);
+
 }
 
 #gameboy-startpause > div:nth-child(2) {
@@ -217,11 +203,19 @@ div {
     width:44px;
     height:10px;
     margin-bottom:4px;
-    background-color:#807B8C;
+    background-color:#c33c28;
     border-radius:5px;
     box-shadow:inset 2px -2px 2px #BFBFBF, inset -2px 2px 2px #000;
 }
 
 #gameboy-startpause > div > div:hover {
     background-color: #000000;
+}
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:20px;   /* Height of the footer */
+	text-align:center;
+   color: #e49c3b;
 }
