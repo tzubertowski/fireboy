@@ -20,7 +20,7 @@
   },
   "default_locale": "en-US",
   "icons": {
-    "60": "/img/icon_bubble_60.png",
-    "128": "/img/icon_bubble_128.png"
+    "60": "/fireboy/img/icon_bubble_60.png",
+    "128": "/fireboy/img/icon_bubble_128.png"
   }
 }
