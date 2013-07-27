@@ -2,7 +2,7 @@
   "version": "1.0",
   "name": "FireBoy",
   "description": "Gameboy emulator",
-  "launch_path": "/index.html",
+  "launch_path": "/fireboy/index.html",
   "developer": {
     "name": "Tomasz Zubertowski",
     "url": "https://jatomasz.pl/"
