@@ -4,19 +4,23 @@
   "description": "Gameboy emulator",
   "launch_path": "/index.html",
   "developer": {
-    "name": "Tomasz Żubertowski",
-    "url": "https://jsgb.host-ed.me/"
+    "name": "Tomasz Zubertowski",
+    "url": "https://jatomasz.pl/"
   },
   "orientation": "portrait-primary",
   "locales": {
     "en-US": {
-      "name": "Gameboy emulator",
-      "description": "A simple time consuming game"
+      "name": "FireBoy",
+      "description": "Gameboy emulator for FFOS"
     },
+    "zh-TW": {
+      "name": "泡泡紙",
+      "description": "一個簡單的戳泡泡紙遊戲"
+    }
   },
   "default_locale": "en-US",
   "icons": {
-    "60": "/img/icon-60r.png",
-    "128": "/img/icon-128r.png"
+    "60": "/img/icon_bubble_60.png",
+    "128": "/img/icon_bubble_128.png"
   }
 }
