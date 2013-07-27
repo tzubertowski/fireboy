@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "name": "FireBoy",
+  "description": "Gameboy emulator",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "Tomasz Żubertowski",
+    "url": "https://jsgb.host-ed.me/"
+  },
+  "orientation": "portrait-primary",
+  "locales": {
+    "en-US": {
+      "name": "Gameboy emulator",
+      "description": "A simple time consuming game"
+    },
+  },
+  "default_locale": "en-US",
+  "icons": {
+    "60": "/img/icon-60r.png",
+    "128": "/img/icon-128r.png"
+  }
+}
