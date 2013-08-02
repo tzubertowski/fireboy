@@ -100,6 +100,11 @@ div {
 
 }
 
+#myselect {
+   position: absolute;
+  width: 10% ;
+  margin-left: 45%;
+}
 #gameboy-paddle > div:nth-child(1) div, #gameboy-paddle > div:nth-child(6) div {
     width:30px;
     height:4px;

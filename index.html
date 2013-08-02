@@ -15,7 +15,7 @@
          DEBUG_MESSAGES = false;
          DEBUG_WINDOWING = false;
     </script>
-
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/other/terminal.js" type="text/javascript"></script>
     <script src="js/other/gui.js" type="text/javascript"></script>
     <script src="js/other/BMPCanvas.js" type="text/javascript"></script>
@@ -25,11 +25,14 @@
 
     <script src="js/GameBoyCore.js" type="text/javascript"></script>
     <script src="js/GameBoyIO.js" type="text/javascript"></script>
+
     <script src="js/pk.js" type="text/javascript"></script>
 	<script src="js/pokemon.js" type="text/javascript"></script>
 	<script src="js/tetris.js" type="text/javascript"></script>
 	<script src="js/drmario.js" type="text/javascript"></script>
+
     <script src="js/zepto.min.js" type="text/javascript"></script>
+
 	
     <LINK href="style/main.css" rel="stylesheet" type="text/css">
     <title>FireBoy - Gameboy Emulator</title>
@@ -37,9 +40,17 @@
 
 <body>
 	<div class="top">
-          <div id="game" style="width:230px; height:206px; margin:0 auto; padding-top:5%;">
+          <div id="game" style="width:230px; height:206px; margin:0 auto; padding-top:3%;">
             <canvas style="width:230px; height: 206px;"></canvas>
           </div>
+
+			<select onchange="javascript:swapContent();" id="myselect">
+				<option value="tetris" selected>Tetris</option>
+				<option value="drmario">Dr. Mario</option>
+				<option value="pokemon">Pokemon Gold</option>
+				<option value="pokemon2">Pokemon Red</option>
+			</select>
+
 	</div>
 	<div class="bot">
 	<div id="gameboy">
@@ -95,11 +106,19 @@
     <div id="terminal_output" style="display:none;"></div>
 
     <script type="text/javascript">
-        $('document').ready(function() {
-          var romStream = base64_decode(tetris);
-          start(document.getElementsByTagName("canvas")[0],  document.getElementsByTagName("canvas")[0], romStream);
-          initPlayer();
 
+		function swapContent(cv) {
+			gra= window[$('#myselect').val()];
+			var romStream = base64_decode(gra);
+			start(document.getElementsByTagName("canvas")[0],  document.getElementsByTagName("canvas")[0], romStream);
+			initPlayer();
+		}
+        $('document').ready(function() {
+			var gra = tetris;
+
+			var romStream = base64_decode(gra);
+			start(document.getElementsByTagName("canvas")[0],  document.getElementsByTagName("canvas")[0], romStream);
+			initPlayer();
           return false;
         });
 
